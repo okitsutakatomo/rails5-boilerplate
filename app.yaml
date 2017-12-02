@@ -1,0 +1,9 @@
+entrypoint: bundle exec rackup --port $PORT
+env: flex
+runtime: ruby
+
+env_variables:
+  SECRET_KEY_BASE: 4447d67619ad778dd5a6b86d429c75d40569bdada46f166004669b317a882c8c47fc0743e58efc551894e490871aa2ece804df34d35e6475b776e11ebb9e1c2d
+
+beta_settings:
+  cloud_sql_instances: rails-logging-test:us-central1:rails-logging-test
